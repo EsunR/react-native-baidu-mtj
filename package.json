@@ -1,0 +1,23 @@
+{
+  "name": "react-native-baidu-mtj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "baiduMtj"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "^16.13.0",
+    "react-native": "^0.61.5"
+  }
+}
