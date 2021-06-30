@@ -59,8 +59,18 @@ public class RNBaiduMtjModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void setAppChannel(String appChannel, boolean saveChannelWithCode) {
+        StatService.setAppChannel(this.reactContext, appChannel, saveChannelWithCode);
+    }
+
+    @ReactMethod
     public void setDebugOn(Boolean isDebug) {
         StatService.setDebugOn(isDebug);
+    }
+
+    @ReactMethod
+    public void setUserProperty(ReadableMap property) {
+        StatService.setUserProperty(this.reactContext, getConvertedMap(property));
     }
 
     /**

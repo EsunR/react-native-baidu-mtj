@@ -3,10 +3,23 @@ type PublicAttr = {
   from?: string;
 };
 
-interface IBaiduMobStat {
+declare var BaiduMobStat: {
   start: () => void;
   setDebugOn: (flag: boolean) => void;
   setUserId: (userId: string) => void;
+  /**
+   * @description 设置channelid
+   * https://mtj.baidu.com/static/userguide/book/android/adconfig/channel/channel.html
+   * @param appChannel 渠道值，数值自定义，不同渠道自己能区分即可，例如"baidu market"
+   * @param saveChannelWithCode 设置为true，保存设置
+   */
+  setAppChannel: (appChannel: string, saveChannelWithCode: boolean) => void;
+
+  /**
+   * @description 自定义用户属性
+   * @param property 开发者设置的自定义参数
+   */
+  setUserProperty: (property: Attributes) => void;
   setGlobalExtraInfo: (attr: Attributes) => void;
   onEvent: (eventId: string, tag: string) => void;
   onEventDuration: (
@@ -34,9 +47,6 @@ interface IBaiduMobStat {
   ) => void;
   onPageStart: (pageName: string) => void;
   onPageEnd: (pageName: string) => void;
-}
+};
 
-declare module 'react-native-baidu-mtj' {
-  var RNBaiduMtj: IBaiduMobStat;
-  export default RNBaiduMtj;
-}
+export default BaiduMobStat;
