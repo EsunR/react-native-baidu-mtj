@@ -1,6 +1,6 @@
 {
   "name": "react-native-baidu-mtj",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,6 @@
   "devDependencies": {
     "react": "^16.13.0",
     "react-native": "^0.61.5"
-  }
+  },
+  "homepage": "https://github.com/EsunR/react-native-baidu-mtj"
 }
