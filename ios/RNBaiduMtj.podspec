@@ -1,12 +1,12 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNBaiduMtj"
-  s.version      = "1.0.0"
+  s.version      = "2.0.1"
   s.summary      = "RNBaiduMtj"
   s.description  = <<-DESC
                   RNBaiduMtj
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://www.npmjs.com/package/react-native-baidu-mtj"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  #s.dependency "others"
-
+  s.dependency "BaiduMobStatCodeless"
 end
 
   
