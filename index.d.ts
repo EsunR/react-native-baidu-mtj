@@ -11,7 +11,7 @@ declare var BaiduMobStat: {
    * @description 设置channelid
    * https://mtj.baidu.com/static/userguide/book/android/adconfig/channel/channel.html
    * @param appChannel 渠道值，数值自定义，不同渠道自己能区分即可，例如"baidu market"
-   * @param saveChannelWithCode 设置为true，保存设置
+   * @param saveChannelWithCode 设置为true，保存设置（IOS 端无效）
    */
   setAppChannel: (appChannel: string, saveChannelWithCode: boolean) => void;
 
